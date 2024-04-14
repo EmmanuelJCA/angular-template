@@ -1,0 +1,11 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
+  "recommendations": [
+    "angular.ng-template",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-spanish",
+    "cyrilletuzi.angular-schematics",
+    "aaron-bond.better-comments",
+    "dbaeumer.vscode-eslint"
+  ]
+}
