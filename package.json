@@ -8,9 +8,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "eslint .",
+    "lint": "eslint . --ext ts,html --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "private": true,
   "dependencies": {
@@ -35,20 +36,31 @@
     "@angular-eslint/template-parser": "^17.3.0",
     "@angular/cli": "^17.3.4",
     "@angular/compiler-cli": "^17.3.4",
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
     "@types/jasmine": "~5.1.4",
     "@typescript-eslint/eslint-plugin": "^7.6.0",
     "@typescript-eslint/parser": "^7.6.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-perfectionist": "^2.9.0",
     "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
     "jasmine-core": "~5.1.2",
     "karma": "~6.4.3",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "prettier-eslint": "^16.3.0",
     "typescript": "~5.4.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
